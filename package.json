@@ -1,26 +1,31 @@
 {
   "name": "find-common-words",
-  "private": true,
-  "version": "0.0.0",
+  "description": "An interactive game which you try to find associative words of a source word.",
+  "author": {
+    "name": "Abdulbaki 'EGGSY' Dursun",
+    "email": "eggsydev@gmail.com",
+    "url": "http://github.com/eggsy"
+  },
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vueuse/core": "^8.1.1",
+    "@vueuse/core": "^8.1.2",
     "@vueuse/motion": "^2.0.0-beta.12",
-    "vue": "^3.2.25",
+    "@vueuse/sound": "^1.1.7",
+    "vue": "^3.2.31",
     "vue-router": "4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.2.0",
-    "@vueuse/sound": "^1.1.7",
+    "@vitejs/plugin-vue": "^2.2.4",
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.23",
-    "typescript": "^4.5.4",
-    "vite": "^2.8.0",
-    "vue-tsc": "^0.29.8"
+    "typescript": "^4.6.2",
+    "vite": "^2.8.6",
+    "vue-tsc": "^0.33.2"
   }
 }
