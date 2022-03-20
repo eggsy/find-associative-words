@@ -1,7 +1,7 @@
 # Find Associative Words
 
 <p align="center">
-  <img src="./demo.png" alt="demo of the game" />
+  <img src="./public/demo.png" alt="demo of the game" />
 </p>
 
 A game which you try to find [associative words](https://en.wikipedia.org/wiki/Associative_meaning) (like tires, seats, and wheel of a car--the source word) of a source word. The idea is based on the Family Feud show but we use a single word instead of phrases or events.
