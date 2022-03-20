@@ -1,4 +1,10 @@
 [build.environment]
-NPM_FLAGS = "--version"
+NPM_FLAGS = "--prefix=/dev/null"
+
 [build]
 command = "npx pnpm install --shamefully-hoist --store=node_modules/.pnpm-store && npx pnpm run build"
+
+[[redirects]]
+from = "/*"
+status = 200
+to = "/index.html"
