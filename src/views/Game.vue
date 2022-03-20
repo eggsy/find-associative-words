@@ -17,12 +17,6 @@ import wrong from "../assets/sounds/wrong.mp3";
 const correctSound = useSound(success);
 const wrongSound = useSound(wrong, { volume: 0.5 });
 
-enum GameState {
-  NOT_STARTED,
-  ONGOING,
-  FINISHED,
-}
-
 const loadingScreen = ref(true);
 const guessValue = ref("");
 
@@ -33,11 +27,9 @@ const modals = reactive({
 
 const gameState = reactive<{
   currentWord: string;
-  state: GameState;
   guessedWords: string[];
 }>({
   currentWord: "",
-  state: GameState.NOT_STARTED,
   guessedWords: [],
 });
 
@@ -59,7 +51,6 @@ const getCurrentWord = computed(() => {
 const resetGame = (withWord?: string) => {
   gameState.currentWord = withWord || "";
   gameState.guessedWords = [];
-  gameState.state = GameState.NOT_STARTED;
 };
 
 const setPlaceholder = (e: Event) => {
@@ -73,11 +64,6 @@ const setPlaceholder = (e: Event) => {
 };
 
 const getRandomWord = () => {
-  if (gameState.state === GameState.ONGOING)
-    return alert(
-      "Are you sure to cancel the current game and start a new one?"
-    );
-
   loadingScreen.value = true;
 
   const randomIndex = Math.floor(Math.random() * words.length);
