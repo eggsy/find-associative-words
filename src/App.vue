@@ -15,13 +15,6 @@ const route = useRoute();
         </div>
       </transition>
     </router-view>
-
-    <div
-      v-if="route.path === '/'"
-      class="fixed text-white opacity-50 md:block bottom-4"
-    >
-      a game by the MAUN English Club
-    </div>
   </div>
 </template>
 
