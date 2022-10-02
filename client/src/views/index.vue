@@ -9,7 +9,7 @@ const whichHovered = ref<string | null>(null);
     class="absolute inset-0 z-10 flex items-center justify-center pointer-events-none"
   >
     <div
-      class="flex items-center justify-center w-32 h-32 text-black transition-colors bg-white rounded-full pointer-events-auto"
+      class="flex items-center justify-center w-32 h-32 text-black transition-colors bg-white rounded-full pointer-events-auto lg:pointer-events-none"
       :class="{
         'ring-4': whichHovered !== null,
         'ring-red-600': whichHovered === 'red',
@@ -24,7 +24,7 @@ const whichHovered = ref<string | null>(null);
     class="absolute inset-0 grid w-screen h-screen text-4xl font-bold uppercase lg:grid-cols-2"
   >
     <router-link
-      to="/list"
+      to="/control"
       class="flex items-center justify-center w-full h-full space-x-2 transition-colors bg-red-500 cursor-pointer hover:bg-red-600 hover:text-white text-white/75"
       @mouseover="whichHovered = 'red'"
       @mouseout="whichHovered = null"
