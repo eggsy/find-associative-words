@@ -4,6 +4,8 @@
   <img src="./public/demo.png" alt="demo of the game" />
 </p>
 
+> Version 2 with real-time remote is out (for those who can self-host the game)! [Check it out here](https://github.com/eggsy/find-associative-words/tree/socket).
+
 A game in which you try to find [associative words](https://en.wikipedia.org/wiki/Associative_meaning) (like tires, seats, and wheel of a car--the source word) of a source word. The idea is based on the Family Feud show but we use a single word instead of phrases or events.
 
 ## Rules / How to Play
