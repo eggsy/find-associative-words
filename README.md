@@ -8,7 +8,28 @@ A _Family Feud-like_ game which supports real-time connection! [Checkout the pub
 
 ### Self-hosting
 
-Clone this repo, change the questions at `client/src/assets/questions.ts`, run the game in development mode from the directory (the directory that contains `client` and `server` folders) via the NPM script `dev`. This will open up a browser window and display a QR code in your terminal. Simply put your phone (or controller device) camera to that code and access the control page. **BOTH DEVICES MUST SHARE THE SAME INTERNET**, this doesn't mean the game requires an internet connection. You will see when you click on any button from your controller device, it will trigger an update on the game and reveal answers, start timers, moves to next questions etc..
+1. Clone this repository:
+   - `git clone -b socket https://github.com/eggsy/find-associative-words.git`
+   - `gh repo clone eggsy/find-associative-words -- -b socket`
+2. Change the questions in `client/src/assets/questions.ts`.
+3. Run the app in development mode:
+   - `npm run dev`
+   - `yarn dev`
+   - `pnpm dev`
+4. Read the QR code from your controller device (e.g. phone) and go to control page (you can also access this page from your server device).
+5. Try the following:
+   - Click on answers to reveal them.
+   - Start a timer and wait for it to finish.
+   - Send wrong answer signal.
+   - Move to next questions.
+6. If everything works out, build the app:
+   - `npm run build`
+   - `yarn build`
+   - `pnpm build`
+7. To play the game, just run:
+   - `npm run start`
+   - `yarn start`
+   - `pnpm start`
 
 ## License
 
