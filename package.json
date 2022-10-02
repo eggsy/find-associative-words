@@ -10,7 +10,6 @@
     "start": "concurrently \"npm run start-server\" \"npm run start-client\""
   },
   "dependencies": {
-    "@vueuse/head": "^0.7.12",
     "concurrently": "^7.4.0",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1"
