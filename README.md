@@ -18,10 +18,10 @@ A _Family Feud-like_ game which supports real-time connection! [Checkout the pub
    - `pnpm dev`
 4. Read the QR code from your controller device (e.g. phone) and go to control page (you can also access this page from your server device).
 5. Try the following:
-   - Click on answers to reveal them.
-   - Start a timer and wait for it to finish.
-   - Send wrong answer signal.
-   - Move to next questions.
+   1. Click on answers to reveal them.
+   2. Start a timer and wait for it to finish.
+   3. Send wrong answer signal.
+   4. Move to next questions.
 6. If everything works out, build the app:
    - `npm run build`
    - `yarn build`
