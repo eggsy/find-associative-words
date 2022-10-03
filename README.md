@@ -6,6 +6,10 @@
 
 A _Family Feud-like_ game which supports real-time connection! [Checkout the public (old) version here](https://associative-words.netlify.app/). For now, this game can't be publicly shared since it is currently a **self-hosted** game, but in the future, I might add ability to create accounts, quizzes and playing them in your classroom, activity or somewhere else.
 
+### Requirements
+
+This game requires [Node.js](https://nodejs.org/en/download/) to be installed on your system to run.
+
 ### Self-hosting
 
 1. Clone this repository:
