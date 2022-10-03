@@ -1,11 +1,5 @@
 {
-  "name": "find-common-words",
-  "description": "An interactive game which you try to find associative words of a source word.",
-  "author": {
-    "name": "Abdulbaki 'EGGSY' Dursun",
-    "email": "eggsydev@gmail.com",
-    "url": "http://github.com/eggsy"
-  },
+  "private": true,
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",

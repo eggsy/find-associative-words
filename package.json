@@ -1,4 +1,5 @@
 {
+  "private": true,
   "version": "2.0.0",
   "scripts": {
     "install": "cd server && npm istall && cd ../client && npm install",
