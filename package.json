@@ -2,18 +2,19 @@
   "private": true,
   "version": "2.0.0",
   "scripts": {
-    "install": "cd server && npm install && cd ../client && npm install",
+    "install": "cd server && pnpm install && cd ../client && pnpm install",
     "build-server": "cd server && tsc",
     "start-server": "node ./server/dist/index.js",
-    "build-client": "cd client && npm run build",
-    "start-client": "cd client && npm run preview -- --host --port 4455",
-    "build": "npm run build-server && npm run build-client",
-    "dev": "concurrently \"nodemon ./server/index.ts\" \"cd client && npm run dev -- --host --port 4455\"",
-    "start": "concurrently \"npm run start-server\" \"npm run start-client\""
+    "build-client": "cd client && pnpm run build",
+    "start-client": "cd client && pnpm run preview -- --host --port 4455",
+    "build": "pnpm run build-server && pnpm run build-client",
+    "dev": "concurrently \"nodemon ./server/index.ts\" \"cd client && pnpm run dev -- --host --port 4455\"",
+    "start": "concurrently \"pnpm run start-server\" \"pnpm run start-client\""
   },
   "dependencies": {
     "concurrently": "^7.4.0",
     "nodemon": "^2.0.20",
+    "pnpm": "^7.13.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
   },
