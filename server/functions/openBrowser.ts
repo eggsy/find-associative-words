@@ -12,11 +12,12 @@ export const openBrowser = () => {
     (item) => item.family === "IPv4"
   )?.address;
 
+  if (!networkIp) return;
+
   console.info("ℹ️  Scan this code to access control page");
 
   setErrorLevel("L");
   generate(`http://${networkIp}:4455/control`, { small: true });
 
-  if (!networkIp) return;
   exec(`${startCmd} "http://${networkIp}:4455/"`);
 };
