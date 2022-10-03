@@ -2,7 +2,7 @@
   "private": true,
   "version": "2.0.0",
   "scripts": {
-    "install": "cd server && npm istall && cd ../client && npm install",
+    "install": "cd server && npm install && cd ../client && npm install",
     "build-server": "cd server && tsc",
     "start-server": "node ./server/dist/index.js",
     "build-client": "cd client && npm run build",
