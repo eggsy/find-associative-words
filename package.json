@@ -7,7 +7,7 @@
     "build-client": "cd client && pnpm run build",
     "start-client": "cd client && pnpm run preview --host --port 4455",
     "build": "pnpm run build-server && pnpm run build-client",
-    "dev": "concurrently \"nodemon ./server/index.ts\" \"cd client && pnpm run dev -- --host --port 4455\"",
+    "dev": "concurrently \"nodemon ./server/index.ts\" \"cd client && pnpm run dev --host --port 4455\"",
     "start": "concurrently \"pnpm run start-server\" \"pnpm run start-client\""
   },
   "dependencies": {
